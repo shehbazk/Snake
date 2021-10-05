@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background: url(../img/bg.jpg);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    background: linear-gradient(rgb(155, 219, 155), rgb(238, 238, 120));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+#hiscoreBox{
+    position: absolute;
+    top: 50px;
+    right: 160px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Sigmar One', cursive;
+
+}
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Sigmar One', cursive;
+}
+.head{
+    background-color: rgb(3, 117, 9);
+    border: .25vmin solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.snake{
+    background-color: rgb(124, 226, 55);
+    border-left: .25vmin solid rgb(0, 0, 0);
+    border-right: .25vmin solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.food{
+    background-color: rgb(201, 12, 12);
+    border-radius: 100%;
+}
